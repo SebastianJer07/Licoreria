@@ -1,0 +1,74 @@
+.empresaInfo {
+    padding: 40px;
+    background-color: #f4f1f0; /* Fondo neutro que resalta el contenido */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta la cantidad de columnas en función del espacio disponible */
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff; /* Fondo blanco para los cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Ajusta la altura de la imagen */
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .textContainer {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cardTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6b4226; /* Color para los títulos */
+    margin-bottom: 15px;
+  }
+  
+  .cardText {
+    font-size: 1.1rem;
+    color: #555; /* Color de texto para una buena legibilidad */
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+  }
+  

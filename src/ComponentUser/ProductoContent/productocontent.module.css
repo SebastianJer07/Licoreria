@@ -1,0 +1,149 @@
+/* productocontent.module.css */
+.producto-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.producto-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.producto-header:hover {
+  background-color: #333;
+}
+
+.producto-titulo {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.producto-main {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.producto-imagen-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.producto-imagen {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.producto-imagen:hover {
+  transform: scale(1.1);
+}
+
+.producto-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto-categoria,
+.producto-descripcion,
+.producto-precio,
+.producto-stock {
+  font-size: 1.2rem;
+  margin: 12px 0;
+  color: #333;
+}
+
+.producto-categoria {
+  font-weight: 600;
+}
+
+.producto-descripcion {
+  font-style: italic;
+  color: #555;
+}
+
+.producto-precio {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 15px;
+}
+
+.producto-stock {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.producto-comprar-btn {
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.producto-comprar-btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .producto-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto-imagen-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.precio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.precio-original {
+  text-decoration: line-through;
+  color: red; /* O cualquier color que desees para el precio tachado */
+}
+
+.precio-descuento {
+  font-weight: bold;
+  color: green; /* O cualquier color que desees para el precio con descuento */
+}

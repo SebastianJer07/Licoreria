@@ -1,0 +1,59 @@
+html, body {
+  height: 100%; /* Asegura que el cuerpo y el HTML ocupen toda la altura */
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Fuente moderna */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #343a40; /* Color de fondo del sidebar */
+  color: #fff; /* Color de texto */
+  padding: 20px;
+  border-right: 1px solid #dee2e6; /* Borde derecho ligero */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  height: 100vh; /* Altura del sidebar en viewport units (viewport height) */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* Para que la lista ocupe todo el espacio disponible */
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center; /* Alinea el icono y el texto verticalmente */
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.nav-link i {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.nav-link:hover {
+  background-color: #495057; /* Cambio de color de fondo al pasar el ratón */
+  color: #adb5bd; /* Cambio de color del texto al pasar el ratón */
+}
+
+.nav-item:last-child .nav-link {
+  margin-top: 20px; /* Espacio adicional para el último enlace */
+}
+
+.sidebar-title {
+  margin-bottom: 20px; /* Espacio debajo del título */
+  font-size: 1.5em; /* Tamaño de la fuente del título */
+  color: #ffffff; /* Color del texto del título */
+  text-align: center; /* Centra el texto del título */
+}

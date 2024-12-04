@@ -1,0 +1,41 @@
+.compra-navbar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.pasos-container {
+  display: flex;
+  gap: 20px; /* Espacio entre los pasos */
+  justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.paso {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paso-activo {
+  background-color: #007bff;
+  color: white;
+}
+
+.paso-numero {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.botones-container {
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.botones-container button {
+  margin: 0 10px; /* Ajusta el margen entre los botones */
+}

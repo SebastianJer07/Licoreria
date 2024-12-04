@@ -1,0 +1,208 @@
+/* Notificaciones */
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  font-size: 16px;
+}
+
+.notification.success {
+  background-color: #4CAF50; /* Verde para éxito */
+}
+
+.notification.error {
+  background-color: #F44336; /* Rojo para error */
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px; /* Bordes más redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra lateral */
+.sidebar {
+  width: 25%;
+  background-color: #ffffff;
+  border-radius: 15px; /* Bordes más redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Navegación */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin-bottom: 20px; /* Espaciado más grande entre ítems */
+}
+
+.navbar ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 8px; /* Bordes redondeados en los enlaces */
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #fff;
+  background-color: #007bff; /* Fondo azul para enlaces activos y hover */
+}
+
+.icon {
+  margin-right: 15px; /* Espacio entre el icono y el texto */
+  font-size: 20px; /* Tamaño del icono */
+}
+
+/* Contenido principal */
+.content {
+  width: 75%;
+  padding: 20px;
+}
+
+.content > div {
+  background-color: #ffffff;
+  border-radius: 15px; /* Bordes más redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 26px; /* Tamaño de fuente más grande */
+  color: #333;
+}
+
+/* Grupo de formulario */
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px; /* Espacio más grande debajo del label */
+  font-weight: 500;
+  color: #555;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 12px; /* Más relleno para los campos de entrada */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Bordes redondeados en los campos de entrada */
+  box-sizing: border-box;
+}
+
+/* Entrada de contraseña */
+.passwordInput {
+  position: relative;
+}
+
+.passwordInput input {
+  padding-right: 50px; /* Más espacio para el ícono del ojo */
+}
+
+.toggleButton {
+  position: absolute;
+  right: 10px;
+  top: 2%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 20px; /* Tamaño del icono de visibilidad */
+  transition: none; /* Elimina cualquier transición */
+
+}
+
+
+
+/* Botones */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px; /* Más espacio en los botones */
+  border-radius: 8px; /* Bordes redondeados en los botones */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  /*background-color: #0056b3;*/
+  transform: translateY(-2px); /* Sombra elevada al pasar el ratón */
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+/* Mejoras para la tabla de historial de compras */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table thead {
+  background-color: #007bff; /* Color de fondo para el encabezado de la tabla */
+  color: #fff; /* Color del texto en el encabezado */
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Línea separadora entre filas */
+}
+
+.table tr:hover {
+  background-color: #f1f1f1; /* Fondo claro al pasar el ratón sobre una fila */
+}
+
+.table th {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.table td {
+  font-size: 16px;
+}
+
+.table td:nth-child(even) {
+  background-color: #f9f9f9; /* Fondo alternante en columnas pares para mejor legibilidad */
+}
+
+.table td:last-child {
+  text-align: right; /* Alineación a la derecha para la última columna (Subtotal) */
+}

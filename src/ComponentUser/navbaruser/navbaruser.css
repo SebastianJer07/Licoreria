@@ -1,0 +1,144 @@
+/* navbaruser.css */
+
+.navbar-user-custom {
+  background-color: #a55d2e; /* Color naranjado oscuro */
+}
+
+.navbar-user-custom .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* Texto blanco para mayor contraste */
+}
+
+.navbar-user-custom .navbar-brand i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.navbar-user-custom .navbar-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Empuja los elementos a la derecha */
+}
+
+.navbar-user-custom .navbar-search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Espacio entre el buscador y el carrito */
+}
+
+.navbar-user-custom .navbar-search {
+  display: flex;
+}
+
+.navbar-user-custom .search-input {
+  width: 200px; /* Tamaño del input de búsqueda */
+  border-radius: 4px 0 0 4px;
+}
+
+.navbar-user-custom .btn-search {
+  border-radius: 0 4px 4px 0;
+  background-color: #E67E22;
+  border: 1px solid #E67E22;
+  color: #fff;
+}
+
+.navbar-user-custom .btn-search:hover {
+  background-color: #D35400;
+  border-color: #D35400;
+}
+
+.navbar-user-custom .navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Espacio entre el menú y el inicio del contenedor */
+  margin-right: auto; /* Empuja el menú hacia la izquierda */
+}
+
+.navbar-user-custom .nav-item {
+  margin-left: 20px; /* Espacio entre elementos del menú */
+}
+
+.navbar-user-custom .nav-link {
+  color: #fff !important;
+  font-size: 1.1rem; /* Tamaño de las letras */
+}
+
+.navbar-user-custom .nav-link i {
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.navbar-user-custom .nav-link:hover {
+  color: #E67E22 !important; /* Color más claro al pasar el mouse */
+}
+
+.navbar-user-custom .navbar-user {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user-custom .navbar-cart {
+  margin-left: 20px; /* Espacio entre los elementos del carrito de usuario */
+}
+
+.navbar-user-custom .navbar-cart:last-child {
+  margin-right: 20px; /* Espacio extra a la derecha del último elemento del carrito */
+}
+
+.navbar-user-custom .navbar-toggler {
+  border: none;
+}
+
+.navbar-user-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Ícono blanco */
+}
+
+.navbar-user-custom .dropdown-menu {
+  background-color: #D35400; /* Fondo del menú desplegable naranjado oscuro */
+  border: none;
+}
+
+.navbar-user-custom .dropdown-item {
+  color: #fff;
+}
+
+.navbar-user-custom .dropdown-item:hover {
+  background-color: #E67E22;
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 992px) {
+  .navbar-user-custom .navbar-nav {
+    margin-left: 0; /* Eliminar margen en pantallas pequeñas */
+    margin-right: 0;
+  }
+
+  .navbar-user-custom .navbar-user {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .navbar-user-custom .navbar-cart {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navbar-user-custom .navbar-search-container {
+    margin-right: 0; /* Eliminar margen en pantallas pequeñas */
+    margin-bottom: 10px;
+  }
+
+  .navbar-user-custom .search-input {
+    width: 100%; /* Hacer el input de búsqueda más ancho en pantallas pequeñas */
+  }
+
+  .navbar-user-custom .btn-search {
+    width: 100%; /* Hacer el botón de búsqueda ocupar el ancho completo en pantallas pequeñas */
+  }
+
+  .navbar-user-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Ícono blanco */
+  }
+}

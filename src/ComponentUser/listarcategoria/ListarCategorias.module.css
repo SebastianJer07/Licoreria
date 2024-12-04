@@ -1,0 +1,67 @@
+.categoriasContainer {
+  padding: 20px;
+  background-color: #f7f7f7; /* Fondo más neutro para resaltar las categorías */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #6b4226; /* Color similar al del diseño de los licores */
+}
+
+.listaCategorias {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff; /* Fondo blanco para las categorías */
+  border: 1px solid #d4a373; /* Bordes en tono dorado */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.categoriaItem {
+  padding: 12px 20px;
+  margin: 5px 0;
+  background-color: #f8f1e9; /* Fondo en tono claro que evoca la suavidad de los licores */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.categoriaItem:hover {
+  background-color: #e9dac1; /* Color de fondo en hover */
+  transform: translateX(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categoriaIcono {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #d4a373; /* Color dorado para los íconos */
+}
+
+.categoriaNombre {
+  font-size: 1.1rem;
+  color: #6b4226; /* Color de texto relacionado con el tema de licores */
+}
+
+@media (max-width: 768px) {
+  .listaCategorias {
+    padding: 8px;
+  }
+
+  .categoriaItem {
+    padding: 10px 16px;
+  }
+
+  .categoriaNombre {
+    font-size: 1rem;
+  }
+}

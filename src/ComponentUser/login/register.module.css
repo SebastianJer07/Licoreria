@@ -1,0 +1,106 @@
+.registerContainer {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 94vh; /* 94% del viewport height */
+  background: linear-gradient(to right, #f0f0f0, #e0e0e0); /* Gradiente de fondo sutil */
+}
+
+.registerCard {
+  max-width: 400px; /* Ancho máximo del contenedor */
+  width: 100%;
+  background-color: #ffffff; /* Fondo blanco para el cuadro de registro */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 30px; /* Espaciado interno */
+  border: 1px solid #dcdcdc; /* Borde sutil */
+  background: linear-gradient(145deg, #ffffff, #f7f7f7); /* Gradiente suave */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.9); /* Sombra moderna */
+}
+
+.registerContainer h1 {
+  font-size: 32px; /* Tamaño del texto */
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px; /* Espacio debajo del título */
+  color: #333; /* Color del texto */
+}
+
+.formGroup {
+  margin-bottom: 15px; /* Espacio entre campos */
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+  font-weight: bold;
+}
+
+.formGroup input {
+  width: 100%;
+  background-color: #f9f9f9; /* Fondo ligeramente gris */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px;
+  padding: 15px; /* Espaciado interno */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.formGroup input:focus {
+  border-color: #007bff; /* Color de borde al enfocar */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+  outline: none; /* Quitar el borde de enfoque predeterminado */
+}
+
+.formGroup input::placeholder {
+  color: #888; /* Color del texto del placeholder */
+}
+
+.btnPrimary {
+  margin-top: 20px;
+  width: 100%;
+  height: 45px;
+  background-color: #007bff; /* Color de fondo del botón */
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Sombra sutil */
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff; /* Color del texto del botón */
+  font-weight: 700;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.btnPrimary:hover {
+  background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Espacio debajo del mensaje */
+}
+
+.alertSuccess {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alertDanger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.registerLink {
+  text-align: center;
+}
+
+.registerLink a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}

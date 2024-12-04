@@ -1,0 +1,118 @@
+* Contenedor principal del componente */
+.categorias-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tabla con scroll */
+.table-responsive {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Estilos para el modal */
+.categoria-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1050; /* Asegúrate de que el modal esté por encima de otros elementos */
+}
+
+/* Contenido del modal */
+.categoria-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Botón de cerrar el modal */
+.categoria-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilos para el formulario dentro del modal */
+.form-categoria .form-group {
+  margin-bottom: 15px;
+}
+
+.form-categoria .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-categoria .form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el pie del modal */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Estilos para los botones en el grupo de acciones */
+.btn-group {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-group .btn {
+  width: 20px; /* Ajusta el ancho según tus necesidades */
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+/* Estilos para los mensajes de error del campo */
+.field-error {
+  color: #dc3545; /* Rojo para indicar error */
+  font-size: 13px; /* Tamaño de fuente más pequeño */
+  margin-top: 5px; /* Espacio adicional arriba del mensaje */
+}
+
+.actions-container {
+  margin-bottom: 20px; /* Ajusta este valor según sea necesario */
+}
+
+.notifications {
+  margin-top: 15px; /* Añadir margen superior para separar del botón */
+}
+
+/* Estilos para el mensaje de éxito */
+.success-notification {
+  background-color: #d4edda; /* Color de fondo verde claro para éxito */
+  color: #155724; /* Color de texto verde oscuro para contraste */
+  padding: 12px 20px; /* Mayor padding para hacer el mensaje más destacado */
+  border-radius: 5px; /* Borde redondeado para un diseño más moderno */
+  font-size: 18px; /* Tamaño de fuente ajustado para legibilidad */
+  line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
+  display: flex; /* Flexbox para centrar el contenido */
+  align-items: center; /* Alineación vertical central */
+  max-width: 100%; /* Asegúrate de que no se desborde del contenedor */
+  margin-bottom: 15px; /* Espacio inferior para separar de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar el mensaje */
+}
+
+/* Estilos para el ícono de éxito (opcional) */
+.success-notification-icon {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+  font-size: 18px; /* Tamaño del ícono */
+  color: #155724; /* Color del ícono, igual que el texto */
+}

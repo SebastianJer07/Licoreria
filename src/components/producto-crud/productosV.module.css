@@ -1,0 +1,131 @@
+/* Estilos generales del modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050; /* Asegúrate de que el modal esté encima de otros contenidos */
+}
+
+/* Contenido del modal */
+.modal-content {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+  max-width: 800px; /* Ancho máximo */
+  max-height: 90vh; /* Altura máxima, limita al 90% de la altura de la ventana */
+  overflow-y: auto; /* Activa el desplazamiento vertical si el contenido es largo */
+  position: relative;
+}
+
+/* Botón de cerrar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Contenedor del formulario */
+.form-producto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Grupos de formulario */
+.form-group {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* Grupos de formulario con alineación */
+.form-group-left {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group-right {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Ajustes para el tamaño de la imagen */
+.img-thumbnail {
+  max-width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  display: block;
+}
+
+/* Ajuste para el input de fecha */
+.form-control[type="date"] {
+  max-width: 150px; /* Ajusta el tamaño según tus necesidades */
+}
+
+/* Estilo para el pie del modal */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Estilo para las filas de la tabla */
+.table-responsive {
+  margin-top: 20px;
+}
+
+/* Estilo para el stock bajo */
+.low-stock {
+  color: red;
+}
+
+
+/* Contenedor de la tabla con desplazamiento */
+.table-scroll {
+  max-height: 500px; /* Ajusta esta altura para mostrar aproximadamente 3 ítems */
+  overflow-y: auto;  /* Habilita el desplazamiento vertical */
+}
+
+/* Estilo para el encabezado de la tabla para mantenerlo fijo al desplazarse */
+.table-scroll thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa; /* Fondo claro para el encabezado */
+  z-index: 1; /* Asegura que el encabezado esté sobre el contenido */
+}
+
+.notifications {
+  margin-top: 15px; /* Añadir margen superior para separar del botón */
+}
+
+
+/* Estilos para el mensaje de éxito */
+.success-notification {
+  background-color: #d4edda; /* Color de fondo verde claro para éxito */
+  color: #155724; /* Color de texto verde oscuro para contraste */
+  padding: 12px 20px; /* Mayor padding para hacer el mensaje más destacado */
+  border-radius: 5px; /* Borde redondeado para un diseño más moderno */
+  font-size: 18px; /* Tamaño de fuente ajustado para legibilidad */
+  line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
+  display: flex; /* Flexbox para centrar el contenido */
+  align-items: center; /* Alineación vertical central */
+  max-width: 100%; /* Asegúrate de que no se desborde del contenedor */
+  margin-bottom: 15px; /* Espacio inferior para separar de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar el mensaje */
+}
+
+/* Estilos para el ícono de éxito (opcional) */
+.success-notification-icon {
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+  font-size: 18px; /* Tamaño del ícono */
+  color: #155724; /* Color del ícono, igual que el texto */
+}
+
