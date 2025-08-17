@@ -1,0 +1,50 @@
+/* components/ContactList.module.css */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .whatsappButton {
+    background-color: #25D366; /* WhatsApp green */
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .whatsappButton i {
+    margin-right: 5px;
+  }
+  
+  .whatsappButton:hover {
+    background-color: #128C7E; /* Darker green for hover */
+  }
+  

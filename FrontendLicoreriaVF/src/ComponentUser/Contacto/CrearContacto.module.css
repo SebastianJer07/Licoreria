@@ -1,0 +1,92 @@
+.crearContactoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+.imageSection {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.imageSection img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.formSection {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.formControl {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submitButton {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.alertError {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.alertSuccess {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+@media (max-width: 768px) {
+  .crearContactoContainer {
+      flex-direction: column;
+  }
+
+  .imageSection,
+  .formSection {
+      max-width: 100%;
+  }
+}

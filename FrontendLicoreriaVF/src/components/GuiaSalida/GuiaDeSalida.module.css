@@ -1,0 +1,157 @@
+/* GuiaDeSalida.module.css */
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #555;
+}
+
+input, select {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 30px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 90%; /* Could be more or less, depending on screen size */
+  max-width: 600px; /* Optional: limit width on larger screens */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal input, .modal select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal button {
+  padding: 12px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+.modal-footer button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,17 @@
+.container-fluid {
+    padding: 0;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .col-md-2 {
+    background-color: #f8f9fa; /* Opcional: puedes añadir un color de fondo al navbar */
+    height: 100vh; /* Asegúrate de que el contenedor del navbar ocupe toda la altura de la pantalla */
+  }
+  
+  .col-md-10 {
+    padding-right: 15px; /* Opcional: añade un poco de padding a la izquierda del contenido */
+  }
+  
